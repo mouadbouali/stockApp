@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+nav{
+    overflow: hidden;
+    z-index: 5;
+}
+.jumbotron {
+    padding-top: 10vh;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+}
+.jumbotron h1 {
+    left: 40vw;
+}
+nav .auth {
+    position: relative;
+    top:35%;
+    margin-right: 15px;
+    margin-left: auto;
+    font-weight: normal;
+}
+nav .auth a {
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+}
+nav .auth a:hover{
+    background: #1b9bff;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    transition: .5s ease-in;
+}
+nav ul {
+    position: relative;
+    top: 30%;
+    left: 20%;
+    display: flex;
+    flex-direction: row;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background-color: #0082e6;
+    width:100vw;
+    height: 10vh;
+}
+nav ul li {
+    margin: 5px;
+}
+nav ul li a {
+    color: white;
+    padding:12px;
+    cursor: pointer;
+}
+nav ul li a:hover {
+    background: #1b9bff;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    transition: .5s ease-in;
+}
+.logo{
+    color: white;
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 50px;
+    padding:12px;
+    overflow-y: hidden;
+}
+.burger div{
+    width:30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+.burger {
+    margin: 20px;
+    display: none;
+}
+
+@media (max-width: 975px){
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    .burger:hover{
+        background: #1b9bff;
+        text-transform: uppercase;
+        padding: 7px 13px;
+        border-radius: 3px;
+        transition: .5s ease-in;
+    }
+    nav ul{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top:80px;
+        text-align: center;
+    }
+    nav ul li {
+        padding: 25px
+    }
+    nav ul li a {
+        font-size: 25px;
+        margin-top: 15px;
+    }
+    nav ul li a:hover{
+        background: none;
+        color:#0082e6;
+    }
+}

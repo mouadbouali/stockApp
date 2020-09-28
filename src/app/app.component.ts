@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'project';
+  isActive = false;
+
+  constructor(){}
+  changeClass(): void{
+    console.log(this.isActive);
+    this.isActive = !this.isActive;
+  }
 }
